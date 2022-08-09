@@ -1,0 +1,49 @@
+Objets and its internal representation
+
+	Objects, in JavaScript, is important data-type. These objects are quite different from JavaScript’s other data-types(Number, String, Boolean).Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types
+ 	It's a Collection of “key: value” pairs. 
+
+
+
+Syntax
+{ 
+  name : value pairs,
+} 
+
+Example:
+
+Consider a candidate having properties like name, number,address,age,mail
+
+we can represent the set of data in objects as follows
+
+var M
+M = {
+name : Mani,
+number : 9566991210,
+address : xxx,
+age : 23,
+mail : xyz@gmail.com,
+subjects : ['x' , 'y' , 'z' ]
+};
+
+console.log(M);
+
+output:
+ {
+name : Mani,
+number : 9566991210,
+address : xxx,
+age : 23,
+mail : xyz@gmail.com,
+}
+
+console.log(M['number']); // dynamic type
+console.log(M.number);
+
+Output : 9566991210
+
+console.log(M['mail'][1]); // to print the specipic data in an array 
+
+Output : y
+
+
